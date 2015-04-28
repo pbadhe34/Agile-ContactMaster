@@ -14,8 +14,19 @@
 
 
 	<antversion property="antversion"/>
+	
+	
+	<target name="clean" description="Delete all result to start with a clean build.">
+		<delete dir="${reports}" />
+		<delete dir="${build.dir}" />
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${reports}" />	 
+		
 
-	<target name="compileJava">
+	</target>
+	
+
+	<target name="compileJava" depends="clean">
 		<mkdir dir="${build.dir}" />
 		 
 		
