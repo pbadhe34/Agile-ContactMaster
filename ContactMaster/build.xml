@@ -127,7 +127,7 @@
 		   <mkdir dir="${reports}/raw" />		
 		    
 				
-			<junit printsummary="yes" haltonfailure="no" haltonerror="true" showoutput="yes" >
+			<junit printsummary="yes" haltonfailure="yes" haltonerror="true" showoutput="yes" >
 				   <classpath>					   	   
 						<pathelement location="bin" />	
 					    <pathelement location="${basedir}/lib/junit-4.2.jar" />
