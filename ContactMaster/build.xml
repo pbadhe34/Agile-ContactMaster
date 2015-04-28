@@ -138,25 +138,26 @@
 	  </target>
 	
 	<target name="BatchTest" depends="compiletests" description="run the batch test and generate xml outputs of test results" >
-		   <echo message="Running the Junit BatchTest.."/>
+		   <echo message="Starting the Junit BatchTest.."/>
 		   <mkdir dir="${reports}/raw" />		
 		    
 				
-			<junit printsummary="yes" haltonfailure="no" haltonerror="true" showoutput="yes" >
+			<junit printsummary="yes" haltonfailure="no" haltonerror="false" showoutput="yes" >
 				   <classpath>					   	   
 						<pathelement location="bin" />	
 					    <pathelement location="${basedir}/lib/junit-4.2.jar" />
 					    <pathelement path="${java.class.path}" />											
 	                 </classpath>  	                                
-			
+			    
 	 		  <batchtest fork="yes" todir="${reports}/raw">
 	 		   	<formatter type="xml"/>
 			    <fileset dir="bin">
 	                 <!--Specify the java files with package test-->
-			      <include name="/test/agile/*.*"/>
+			      <include name="test/agile/*.class"/>
 			    </fileset>
 
 			  </batchtest>
+			  
 			</junit>	
 		</target>
 	
