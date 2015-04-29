@@ -155,7 +155,6 @@
 	                 <!--Specify the java files with package test-->
 			      <include name="test/agile/*.class"/>
 			    </fileset>
-
 			  </batchtest>
 			  
 			</junit>	
