@@ -18,6 +18,14 @@ public class FirstTest {
 	 assertTrue(flag==false);
 	}
 	
+	@Test
+	public void Secondtest()
+	{
+	 System.out.println("Secondtest.testRun()");	 
+	  
+	 assertTrue(false);
+	}
+	
 	
 
 }
