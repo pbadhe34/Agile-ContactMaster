@@ -21,8 +21,7 @@ public class FirstTest {
 	@Test
 	public void Secondtest()
 	{
-	 System.out.println("Secondtest.testRun()");	 
-	  
+	 System.out.println("Secondtest.testRun()");		  
 	 assertTrue(false);
 	}
 	
